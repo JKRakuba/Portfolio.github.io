@@ -9,6 +9,11 @@ html, body{
 	font-family: 'sans-serif';
   }
 
+  .p{
+
+    color: #262626;
+    font-size: 16px;
+  }
 * 
 /*NAVIGATION*/
 * {
@@ -58,6 +63,7 @@ html, body{
     font-weight: 500;
     transition: 0.2s all ease-in-out;
     color: #585858;
+    align-items: center;
   }
   
   .menu:hover a {
@@ -114,155 +120,167 @@ html, body{
 
 
 /*HOME*/
-
+.h1{
+  font-size: 40px;
+  color: #7a9e06; /
+}
 
 /*Background Image*/
 
-
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;;
+  box-sizing: border-box;
+  size: cover;
 }
 
-.background{
-  width: 1326px;
-  height: 700px;
-  position: relative;
-  color: white;
-  text-align: center;
-}
 
-.background img {
-  margin-top: 0px;
-  min-height: 700px;
-  max-width: 1326px;
-  background: url(girlcode.png) no-repeat top center fixed;
-  background-size: cover;
-  padding: 0px 0px;
-  color: #fff;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+.background-image {
+  background-image: url('girlcode.jpeg'); 
+  background-size: cover; 
   background-position: center;
+  height: 100vh;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  color: white; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
-
-img{
-  width: 1326px;
-  height: 700px;
+.img{
+  width: 1920px;
+  height: 800px;
 }
-
-@media only screen and (max-width: 1280px) {
-  img {
-  width: 100%;
-  }
-  }
-
-
 
 
 /*PROFILE*/
 
-.section-profile{
-  background-size: cover;
-  align-content: center;
-}
-
-.profile-card {
-  background-color: #7a9e06;
-  padding: 50px 50px;
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #7a9e06;
   border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+header {
   text-align: center;
-  width: 800px; /* Fixed width */
-  background-size: 500px 500px;
-  align-content: center;
+  margin-bottom: 50px;
 }
 
-.profile-image {
-  border-radius: 50%; /* Circular image */
-  width: 150px; /* Image size */
-  height: 150px; /* Image size */
-  object-fit: cover; /* Cover the area */
-  border-color: #fff;
-}
-
-.profile-name {
-  margin: 15px 0 5px;
+h1 {
   font-size: 30px;
+  color:#7a9e06;
 }
 
-.profile-title {
-  font-size: 18px;
-  color: #1b1b1b; /* Grey color */
+h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #7a9e06;
+  border-bottom: 2px solid #7a9e06;
+  padding-bottom: 20px;
+}
+
+.about {
+  margin-top: 20px;
+}
+
+.about p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  color: #262626;
+}
+
+@media (max-width: 500px) {
+  h1 {
+      font-size: 30px;
+  }
+  h2 {
+      font-size: 20px;
+  }
+  .about p {
+      font-size: 16px;
+  }
 }
 
 .profile-bio {
   font-size: 16px;
-  color: #ffffff; /* Darker grey */
-  margin: 10px 0 20px;
+  color: #1b1b1b;
+  margin: 1200px 20px;
 }
 
 .contact-button {
   display: inline-block;
-  background-color: #1b1b1b; /* WhatsApp color */
+  background-color: #1b1b1b; 
   color: white;
-  padding: 10px 15px;
+  padding: 50px 50px;
   border-radius: 5px;
   text-decoration: none;
   transition: background-color 0.3s;
+  margin-bottom: 50px;
 }
 
 .contact-button:hover {
-  background-color: #7a9e06; /* Darker shade on hover */
+  background-color: #7a9e06; 
 }
+
+
 
 /*SKILLS*/
 
 .skills-container {
-  padding: 20px;
-  max-width: 600px; /* Max width for skills section */
-  margin: 20px auto; /* Center the container */
-  background-color: #c4c4c4;
+  padding: 20px 20px;
+  max-width: 600px;
+  margin: 20px auto; 
+  background-color: #f3f7c0;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   
 }
 
 .skills-list {
-  list-style-type: none; /* Remove default list styling */
-  padding: 0; /* Remove default padding */
+  list-style-type: none;
+  padding: 0; 
 }
 
 .skills-list li {
-  background-color: #e7f3fe; /* Light background for list items */
-  margin: 10px 0; /* Space between items */
+  background-color: #e7f3fe; 
+  margin: 10px 0;
   padding: 10px;
   border-radius: 5px;
   transition: background-color 0.3s;
 }
 
 .skills-list li:hover {
-  background-color: #7a9e06 /* Darker shade on hover */
+  background-color: #7a9e06 
 }
 
 /*Download CV Button*/
 .button-container {
-  text-align: center; /* Center text inside the container */
+  text-align: center; 
 }
 
 .download-button {
   display: inline-block;
-  background-color: #4CAF50; /* Button color */
+  background-color: #4CAF50; 
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
-  text-decoration: none; /* Remove underline */
+  text-decoration: none; 
   font-size: 16px;
   transition: background-color 0.3s;
 }
 
 .download-button:hover {
-  background-color: #45a049; /* Darker shade on hover */
+  background-color: #45a049; 
+  margin-bottom: 20px;
 }
+
+
+
+
 
 /*PROJECTS*/
 
@@ -306,7 +324,7 @@ img{
 
 .project-card p {
   padding: 0 15px;
-  color: #555; /* Darker grey for text */
+  color: #262626; /* Darker grey for text */
 }
 
 .project-button {
@@ -325,7 +343,7 @@ img{
 }
 
 .card {
-  max-width: 300px; /* Limit card width */
+  max-width: 200px; /* Limit card width */
 }
 
 .container {
@@ -521,10 +539,13 @@ ul{
 	border-radius: 50%;
 	color: #ffffff;
 	transition: all 0.5s ease;
+  background-size: cover;
+  background-image: url('https://za.linkedin.com');
 }
 .footer-col .social-links a:hover{
 	color: #ffffff;
 	background-color: #ebdb04c2;
+  transform: scale(1.05);
 }
 .copyright-footer {
   background-color: #ebdb04c2; 
