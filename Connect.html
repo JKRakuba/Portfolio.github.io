@@ -40,11 +40,18 @@ body {
 <!-- BODY-->
 	 
 <div class="text-center">
-  <h1 class="display-4">Contacts</h1>
+  <h1 class="display-4">Contact Me</h1>
   <p>Fill out the form below and I'll get back to you as soon as possible. </p>
 </div>
 
 <section class="contact-section">
+
+  <form class="contact-form" action="https:///submit" method="POST">
+
+    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+    <input type="hidden" name="subject" value="New Contact" />
+    <input type="hidden" name="from_name" value="My Website" />
+
   <div class="form-group-container">
           <div class="form-group">
               <label for="name" class="form-label">Name</label>
