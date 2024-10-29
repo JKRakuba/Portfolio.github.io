@@ -14,6 +14,17 @@ html, body{
     color: #262626;
     font-size: 16px;
   }
+
+  
+.p1 {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  padding-bottom: 5%;
+}
+  
+
+
 * 
 /*NAVIGATION*/
 * {
@@ -152,6 +163,53 @@ html, body{
   width: 1920px;
   height: 800px;
 }
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: center;
+  padding: 20px;
+}
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+h2 {
+  margin: 10px 0;
+}
+
+.bio {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+}
+
+.social-links li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #007BFF;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
 
 
 /*PROFILE*/
@@ -546,11 +604,11 @@ ul{
 }
 .footer-col .social-links a:hover{
 	color: #ffffff;
-	background-color: #ebdb04c2;
+	background-color: #7a9e06;
   transform: scale(1.05);
 }
 .copyright-footer {
-  background-color: #ebdb04c2; 
+  background-color: #7a9e06;
   color: #1b1b1b;           /* Text color */
   text-align: center;     /* Centered text */
   padding: 15px 10px;       /* Padding top/bottom */
