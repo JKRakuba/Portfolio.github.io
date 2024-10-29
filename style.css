@@ -147,6 +147,7 @@ html, body{
   background-color: #ebdb04;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
+
 .img{
   width: 1920px;
   height: 800px;
@@ -265,7 +266,7 @@ h2 {
 
 .download-button {
   display: inline-block;
-  background-color: #4CAF50; 
+  background-color: #7a9e06; 
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
@@ -275,7 +276,7 @@ h2 {
 }
 
 .download-button:hover {
-  background-color: #45a049; 
+  background-color: #1b1b1b; 
   margin-bottom: 20px;
 }
 
@@ -422,7 +423,7 @@ h2 {
   color: #fff;
   padding: 13px 5px;
   border-radius: 0.375rem;
-  background-color: olive; 
+  background-color: olive; /* Olive Green */
   border: none;
   color: white;
   text-align: center;
@@ -436,9 +437,9 @@ h2 {
 }
 
 
-.contact-form {
+contact-form {
   background: white;
-  border:#ebdb04c2;
+  border: olive;
   height: 20px;
   width: 100px;
 }
@@ -454,16 +455,16 @@ button, hover {
   display: inline-block;
   font-size: 16px;
   position: relative;
-  background-color: #ebdb04c2;
+  background-color: darkolivegreen;
   color: #fff;
   overflow: hidden;
   position: relative;
   z-index: 2;
 }
 
-.button:hover{
+button:hover{
   color: #fff;
-  background: #ebdb04c2;
+  background: #cc7722;
   transform: translate(0, 0);
   transition: ease-out;
 }
